@@ -12371,7 +12371,7 @@ Percentage of individuals making more than $50,000: 0.2478439697492371%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: One-hot encode the &#39;features_log_minmax_transform&#39; data using pandas.get_dummies()</span>
@@ -12385,7 +12385,7 @@ Percentage of individuals making more than $50,000: 0.2478439697492371%
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> total features after one-hot encoding.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">encoded</span><span class="p">)))</span>
 
 <span class="c1"># Uncomment the following line to see the encoded feature names</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">encoded</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]);</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">encoded</span><span class="p">);</span>
 </pre></div>
 
 </div>
@@ -12403,7 +12403,7 @@ Percentage of individuals making more than $50,000: 0.2478439697492371%
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>103 total features after one-hot encoding.
-[&#39;age&#39;, &#39;education-num&#39;, &#39;capital-gain&#39;, &#39;capital-loss&#39;, &#39;hours-per-week&#39;, &#39;workclass_ Federal-gov&#39;, &#39;workclass_ Local-gov&#39;, &#39;workclass_ Private&#39;, &#39;workclass_ Self-emp-inc&#39;, &#39;workclass_ Self-emp-not-inc&#39;]
+[&#39;age&#39;, &#39;education-num&#39;, &#39;capital-gain&#39;, &#39;capital-loss&#39;, &#39;hours-per-week&#39;, &#39;workclass_ Federal-gov&#39;, &#39;workclass_ Local-gov&#39;, &#39;workclass_ Private&#39;, &#39;workclass_ Self-emp-inc&#39;, &#39;workclass_ Self-emp-not-inc&#39;, &#39;workclass_ State-gov&#39;, &#39;workclass_ Without-pay&#39;, &#39;education_level_ 10th&#39;, &#39;education_level_ 11th&#39;, &#39;education_level_ 12th&#39;, &#39;education_level_ 1st-4th&#39;, &#39;education_level_ 5th-6th&#39;, &#39;education_level_ 7th-8th&#39;, &#39;education_level_ 9th&#39;, &#39;education_level_ Assoc-acdm&#39;, &#39;education_level_ Assoc-voc&#39;, &#39;education_level_ Bachelors&#39;, &#39;education_level_ Doctorate&#39;, &#39;education_level_ HS-grad&#39;, &#39;education_level_ Masters&#39;, &#39;education_level_ Preschool&#39;, &#39;education_level_ Prof-school&#39;, &#39;education_level_ Some-college&#39;, &#39;marital-status_ Divorced&#39;, &#39;marital-status_ Married-AF-spouse&#39;, &#39;marital-status_ Married-civ-spouse&#39;, &#39;marital-status_ Married-spouse-absent&#39;, &#39;marital-status_ Never-married&#39;, &#39;marital-status_ Separated&#39;, &#39;marital-status_ Widowed&#39;, &#39;occupation_ Adm-clerical&#39;, &#39;occupation_ Armed-Forces&#39;, &#39;occupation_ Craft-repair&#39;, &#39;occupation_ Exec-managerial&#39;, &#39;occupation_ Farming-fishing&#39;, &#39;occupation_ Handlers-cleaners&#39;, &#39;occupation_ Machine-op-inspct&#39;, &#39;occupation_ Other-service&#39;, &#39;occupation_ Priv-house-serv&#39;, &#39;occupation_ Prof-specialty&#39;, &#39;occupation_ Protective-serv&#39;, &#39;occupation_ Sales&#39;, &#39;occupation_ Tech-support&#39;, &#39;occupation_ Transport-moving&#39;, &#39;relationship_ Husband&#39;, &#39;relationship_ Not-in-family&#39;, &#39;relationship_ Other-relative&#39;, &#39;relationship_ Own-child&#39;, &#39;relationship_ Unmarried&#39;, &#39;relationship_ Wife&#39;, &#39;race_ Amer-Indian-Eskimo&#39;, &#39;race_ Asian-Pac-Islander&#39;, &#39;race_ Black&#39;, &#39;race_ Other&#39;, &#39;race_ White&#39;, &#39;sex_ Female&#39;, &#39;sex_ Male&#39;, &#39;native-country_ Cambodia&#39;, &#39;native-country_ Canada&#39;, &#39;native-country_ China&#39;, &#39;native-country_ Columbia&#39;, &#39;native-country_ Cuba&#39;, &#39;native-country_ Dominican-Republic&#39;, &#39;native-country_ Ecuador&#39;, &#39;native-country_ El-Salvador&#39;, &#39;native-country_ England&#39;, &#39;native-country_ France&#39;, &#39;native-country_ Germany&#39;, &#39;native-country_ Greece&#39;, &#39;native-country_ Guatemala&#39;, &#39;native-country_ Haiti&#39;, &#39;native-country_ Holand-Netherlands&#39;, &#39;native-country_ Honduras&#39;, &#39;native-country_ Hong&#39;, &#39;native-country_ Hungary&#39;, &#39;native-country_ India&#39;, &#39;native-country_ Iran&#39;, &#39;native-country_ Ireland&#39;, &#39;native-country_ Italy&#39;, &#39;native-country_ Jamaica&#39;, &#39;native-country_ Japan&#39;, &#39;native-country_ Laos&#39;, &#39;native-country_ Mexico&#39;, &#39;native-country_ Nicaragua&#39;, &#39;native-country_ Outlying-US(Guam-USVI-etc)&#39;, &#39;native-country_ Peru&#39;, &#39;native-country_ Philippines&#39;, &#39;native-country_ Poland&#39;, &#39;native-country_ Portugal&#39;, &#39;native-country_ Puerto-Rico&#39;, &#39;native-country_ Scotland&#39;, &#39;native-country_ South&#39;, &#39;native-country_ Taiwan&#39;, &#39;native-country_ Thailand&#39;, &#39;native-country_ Trinadad&amp;Tobago&#39;, &#39;native-country_ United-States&#39;, &#39;native-country_ Vietnam&#39;, &#39;native-country_ Yugoslavia&#39;]
 </pre>
 </div>
 </div>
@@ -12869,7 +12869,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>The most suitable algorithm for this data is Random Forest. On a 100% sample size, the Random Forest algorithm tied for the highest F-score within a 1% difference with SVM. The F-score is very reasonable for a model trained with default parameters, and can be tuned to reduce the variance between the training/testing sets. The SVM model on the other hand, faces a Bias problem.</p>
+<p>The most suitable algorithm for this data is Random Forest. On a 100% sample size, the Random Forest algorithm tied for the highest F-score within a 3% difference with SVM. The F-score is very reasonable for a model trained with default parameters, and can be tuned to reduce the variance between the training/testing sets. The SVM model on the other hand, faces a Bias problem.</p>
 <p>The training and testing time for Random Forests is also the best. As expected, SVMs had high training time, and reasonable testing time. And the KNNs had very low training time and very high testing time. Compared to these, Random Forests had both low training and low testing time, which is because we are training small decision trees instead of building one larger model like the other models are.</p>
 <p>The Random Forest algorithm is most suitable for this data because it also does Feature Engineering. We have over a 100 features, which means that we need to find the most important features that contribute information. Although the model overfit on the training data, it shows that it was able to find the right set of features and conditions to separate the data, and by tuning the model, we can reduce the variance. With SVMs, we have a bias problem, and to tune the model, we will need to find the right kernel to use. And even with a standard linear kernel, we get a large training and testing time, which will make it difficult to do a grid search in reasonable time.</p>
 <p>One good thing about all 3 models is that the F-beta score is similar for the 10% sample compared to the 100% sample, so we can use the 10% sample to tune each model and expect the model to perform well on the 100% sample.</p>
@@ -12896,16 +12896,16 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <p>The final chosen model is Random Forests. To explain Random Forests, Decision Trees need to be understood first.</p>
-<p>A Decision Tree model is a tree-like classification model that separates the data recursively. At each step, the model selects a feature which best divides the data. At each next step, we find the feature which divides the data best within than split. We do this recursively until we have a tree that reasonably divides the data into the two labels.</p>
-<p>In the following example, we see how a decision tree can be used to make a decision on whether a passenger will survive. When we get a new unseen data point, we simply follow through the tree and select the predicted decision when we reach a leaf node.
+<p>A Decision Tree model is a tree-like algorithm that can be used to understand how to separate data based on it's attributes. We separate the data at each point in the tree on the best way to divide the data. As the tree becomes deeper, more and more narrow attributes are used. This is done until the tree can reasonably divide the data into its different categories.</p>
+<p>The following example shows how a decision tree can be used to make a decision on whether a passenger from a ship accident would have survived. It shows that males were less likely to have survived, so the leaf node is immediately below the root, while for females, we need to use more information like age and siblings to make a decision.</p>
+<p>Now, the good thing about a Decision Tree is that when we get a new person whom we have not seen before, we just follow through the tree with the information we have avalaible about the person.
 <img src='https://cdn-images-1.medium.com/max/600/1*XMId5sJqPtm8-RIwVVz2tg.png'></img></p>
-<p>In a Random Forest, the main difference is that we have multiple decision trees. Let's say that we have 50 features in our data. For each decision tree in the forest, we take a random sample of the features, and use the set as the basis for the tree. This means that within the random set of features, we choose the feature that best divides the data. We continue to do this for the other features in that random set. This process is repeated for each new decision tree we add to the forest.</p>
-<p>Because of the randomness introduced when selecting features, the decision tree can cover a wide variety of features at the top nodes. This allows the model to cover a large range of features.</p>
+<p>Now, since we know about Decision Trees, we can understand Random Forests. Random Forests are simply a collection of multiple decision trees. Let's say that instead of just the 3 things we know about the person, we have a 50 things. If we were to make a decision tree on this information, the tree would become very deep, with perhaps 12-16 levels. This is overkill because the tree wouldn't generalize well to the entire collection of people. A large tree would get easily skewed by few people.</p>
+<p>So, in a Random Forest, instead of having one large decision tree, we use a collection of small decision trees. Each decision tree would be limited to the number of attributes it can have, so if it the cap is 5, each tree would be small. But, we also need to take advantage of the entire set of attributes and not use the same attributes in each tree. So, each decision tree will be given a random sample of attributes to choose from. There can be overlap between them, but for most trees, they will have a unique set and order of attributes. This also means different trees can make different decisions based on how they are made. One tree may make a decision on survival based on height and weight, other on age and gender, and another on age and economic status. Each would make a different decision on it's own, and we take the most common result as the final result.</p>
 <p><img src='https://cdn-images-1.medium.com/max/800/1*VazskTxC0XHVavsOJgS0sg.png'></img></p>
 <p>As shown in the image above, the multiple decision trees can be used to collectively make a decision. So, if we have 5 decision trees, and a majority of them select label <code>A</code> over label <code>B</code>, the final decision will be label <code>A</code>.</p>
-<p>A good advantage of Random Forests is that it is less likely to overfit if the right hyperparameters are chosen. Because of the randomness in the model, each tree within the forest will likely have a different set of core features, so the model will be learning how to make a decision using different features each time. This is going to be useful for our data because we have a large number of features and large size of data.</p>
-<p>To understand Decision Trees, refer to the following link: <a href="https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052">https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052</a></p>
-<p>For Random Forests, the following link: <a href="https://towardsdatascience.com/the-random-forest-algorithm-d457d499ffcd">https://towardsdatascience.com/the-random-forest-algorithm-d457d499ffcd</a></p>
+<p>To understand Decision Trees, refer to the following link and reference the above image: <a href="https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052">https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052</a></p>
+<p>For Random Forests and it's image, the following link: <a href="https://towardsdatascience.com/the-random-forest-algorithm-d457d499ffcd">https://towardsdatascience.com/the-random-forest-algorithm-d457d499ffcd</a></p>
 
 </div>
 </div>
@@ -20716,6 +20716,40 @@ F-score on testing data: 0.6910
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!!</span>jupyter nbconvert *.ipynb
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[55]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;[NbConvertApp] Converting notebook finding_donors.ipynb to html&#39;,
+ &#39;[NbConvertApp] Writing 1144519 bytes to finding_donors.html&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     </div>
   </div>
